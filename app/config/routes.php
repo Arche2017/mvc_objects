@@ -1,0 +1,29 @@
+<?php
+return
+[
+	'objects/show'=>
+	[
+		'controller'=>'Index',
+		'action'=>'show'
+	],
+	'admin/login'=>
+	[
+		'controller'=>'Admin',
+		'action'=>'login'
+	],
+	'admin/auth'=>
+	[
+		'controller'=>'Admin',
+		'action'=>'auth'
+	],
+	'admin/exit'=>
+	[
+		'controller'=>'Admin',
+		'action'=>'exitFromAdmin'
+	],
+	'admin/show'=>
+	[
+		'controller'=>'Admin',
+		'action'=>'show'
+	]
+];

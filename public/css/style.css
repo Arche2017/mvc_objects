@@ -1,0 +1,13 @@
+body{
+	font-size:2vw;
+}
+#content{
+	margin:10%;
+}
+table td{
+	width:80%;
+}
+a{
+	display:block;
+	margin:3% 0 3% 50%;
+}
