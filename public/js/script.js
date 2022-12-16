@@ -5,7 +5,6 @@ for (var i = 0; i < arr.length; i++) {
     //вычисляем вложенные объекты
     let id = arr[i].getAttribute('id').split('_')[1];
     count=countChilds(arr[i],id);
-    //console.log(count);
     if(count>0) 
         {
             arr[i].childNodes[1].innerText = '+';
@@ -69,5 +68,4 @@ function countChilds(elem,id,count=0)
         countChilds(next,id,count);      
     }
     return countChilds(next,id,count);
-    //countChilds(next,id,count);
 }
