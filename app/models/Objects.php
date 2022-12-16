@@ -42,7 +42,7 @@ class Objects extends Model
 		{
 			foreach($data as $val)
 			{
-				$str.='<tr parent_id='.$val['parent_id'].' hidden_children="true" class="object_row" id=object_'.$val['id'].'><td class="object_title" style="padding-left:'.($val['i']*2).'%">'.$val['title'].'</td><td>+<td></tr>';
+				$str.='<tr parent_id='.$val['parent_id'].' hidden_children="true" class="object_row" id=object_'.$val['id'].'><td class="object_title" style="padding-left:'.($val['i']*2).'%">'.$val['title'].'</td><td align="center"><td></tr>';
 				if(count($val['children'])>0) 
 				{
 					$i++;
@@ -53,4 +53,5 @@ class Objects extends Model
 		}
 		return $str;
 	}
+	
 }

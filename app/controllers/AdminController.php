@@ -25,7 +25,7 @@ class AdminController extends Controller
 		{
 			$_SESSION['login'] = $_POST['login'];
 			$_SESSION['password'] = $_POST['password'];
-			return $this->show();
+			return header('Location:/admin/show');
 		}
 		return $this->back();	
 	}

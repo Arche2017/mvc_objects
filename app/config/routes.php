@@ -3,8 +3,18 @@ return
 [
 	'objects/show'=>
 	[
-		'controller'=>'Index',
+		'controller'=>'Object',
 		'action'=>'show'
+	],
+	'objects/delete'=>
+	[
+		'controller'=>'Object',
+		'action'=>'delete'
+	],
+	'objects/insert'=>
+	[
+		'controller'=>'Object',
+		'action'=>'insert'
 	],
 	'admin/login'=>
 	[

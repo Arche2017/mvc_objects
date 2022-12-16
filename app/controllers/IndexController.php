@@ -17,11 +17,6 @@ class IndexController extends Controller
 		$data=$object->createTree($data);
 		$data=$object->print_objects($data);
 		return $this->view->render('show',$data);
-	}
-	
-
-
-	
-	
+	}	
 	
 }
