@@ -18,5 +18,5 @@ class IndexController extends Controller
 		$data=$object->print_objects($data);
 		return $this->view->render('show',$data);
 	}	
-	
+	//изменение 09.2023
 }

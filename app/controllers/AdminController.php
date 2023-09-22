@@ -36,14 +36,18 @@ class AdminController extends Controller
 	}
 	public function show()
 	{
-		$object=new Objects;
-		$data= $object->get();
-		//упорядочиваем объекты
-		$data=$object->createTree($data);
-		$data=$object->print_objects($data);
-		return $this->view->render('admin_show',$data);
+		if($_SESSION['login']&&$_SESSION['password']) {
+			$object=new Objects;
+			$data= $object->get();
+			//упорядочиваем объекты
+			$data=$object->createTree($data);
+			$data=$object->print_objects($data);
+			return $this->view->render('admin_show',$data);
+		}
+		else return header('Location:/admin/login');
+
 	}
-	
+	//
 	public function exitFromAdmin()
 	{
 		unset($_SESSION['login']);
